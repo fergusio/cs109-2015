@@ -1,4 +1,14 @@
-# 2015
+All right, this git repo is me working through the CS109 class, one lab at a time.
+
+To start:
+- [Lecture videos & notes](http://cs109.github.io/2015/pages/videos.html)
+
+# Week 1: 
+
+There are three very introductory notebooks: [pythonpandas](https://github.com/khalido/cs109-2015/blob/master/Labs/2015lab1-master/Lab1-pythonpandas.ipynb), followed by babypython, and finally git. However, since the course dates back to 2015, some of the python is a bit dated. 
+
+
+# The original readme from the 2015 class: 
 
 ##Lectures
 
