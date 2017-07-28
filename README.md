@@ -3,9 +3,19 @@ All right, this git repo is me working through the CS109 class, one lab at a tim
 To start:
 - [Lecture videos & notes](http://cs109.github.io/2015/pages/videos.html)
 
+My notes are here in the readme file as I work through the course.
+
 # Week 1: 
 
-There are three very introductory notebooks: [pythonpandas](https://github.com/khalido/cs109-2015/blob/master/Labs/2015lab1-master/Lab1-pythonpandas.ipynb), followed by babypython, and finally git. However, since the course dates back to 2015, some of the python is a bit dated. 
+Starting with [Lecture 1](https://github.com/khalido/cs109-2015/blob/master/Lectures/01-Introduction.pdf)
+
+There are three very introductory notebooks: [pythonpandas](https://github.com/khalido/cs109-2015/blob/master/Labs/2015lab1-master/Lab1-pythonpandas.ipynb), followed by [babypython](https://github.com/khalido/cs109-2015/blob/master/Labs/2015lab1-master/Lab1-babypython.ipynb, and finally [git](https://github.com/khalido/cs109-2015/blob/master/Labs/2015lab1-master/Lab1-git.ipynb). However, since the course dates back to 2015, some of the python is a bit dated and uses 2.x code. 
+
+After doing the three intro notebooks, [hw0](https://github.com/khalido/cs109-2015/blob/master/Labs/2015lab1-master/hw0.ipynb) runs you through installing anaconda, git, and setting up a github and aws account.
+
+Hw0 has one interesting section, where you solve the montyhall problem one step at a time. I didn't really like their steps, so made a [simpler monty hall implementation](https://github.com/khalido/algorithims/blob/master/monty_hall.ipynb). 
+
+# Week 2
 
 
 # The original readme from the 2015 class: 
