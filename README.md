@@ -3,7 +3,7 @@ All right, this git repo is me working through the CS109 class, one lab at a tim
 To start:
 - [Lecture videos & notes](http://cs109.github.io/2015/pages/videos.html)
 
-My notes are here in the readme file as I work through the [course syllabus](http://cs109.github.io/2015/pages/schedule.html). 
+My notes are here in the readme file as I work through the [course syllabus](http://cs109.github.io/2015/pages/schedule.html) and the [labs and homeworks](https://porter.io/github.com/cs109/content). 
 
 **Study Suggestions before starting:**
 
