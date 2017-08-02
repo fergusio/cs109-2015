@@ -18,14 +18,15 @@ Starting with [Lecture 1](https://github.com/khalido/cs109-2015/blob/master/Lect
 
 There are three very introductory notebooks: [pythonpandas](https://github.com/khalido/cs109-2015/blob/master/Labs/2015lab1-master/Lab1-pythonpandas.ipynb), followed by [babypython](https://github.com/khalido/cs109-2015/blob/master/Labs/2015lab1-master/Lab1-babypython.ipynb), and finally [git](https://github.com/khalido/cs109-2015/blob/master/Labs/2015lab1-master/Lab1-git.ipynb). However, since the course dates back to 2015, some of the python is a bit dated and uses 2.x code. 
 
-After doing the three intro notebooks, [hw0](https://github.com/khalido/cs109-2015/blob/master/Labs/2015lab1-master/hw0.ipynb) runs you through installing anaconda, git, and setting up a github and aws account.
+After doing the three intro notebooks, [hw0](https://github.com/khalido/cs109-2015/blob/master/Labs/2015lab1/hw0.ipynb) runs you through installing anaconda, git, and setting up a github and aws account.
 
 Hw0 has one interesting section, where you solve the montyhall problem one step at a time. I didn't really like their steps, so made a [simpler monty hall implementation](https://github.com/khalido/algorithims/blob/master/monty_hall.ipynb). 
 
 ## Week 2: Intro Data Analysis and Viz
 
 The lecture 2 notebook goes through getting data and putting it into a pandas dataframe.
-Hw 1
+
+Hw 1 - link to it?
 
 ## Week 3 : Databases, SQL and more Pandas
 
