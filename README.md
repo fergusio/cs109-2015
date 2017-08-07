@@ -3,6 +3,8 @@ All right, this git repo is me working through [Harvard's 2015 CS109 class](http
 To start:
 - [Lecture videos & notes](http://cs109.github.io/2015/pages/videos.html)
 
+Note: download the videos using [this script](https://github.com/christopher-beckham/cs109-dl-videos), and merge [pull request 11](https://github.com/christopher-beckham/cs109-dl-videos/pull/11) to get the 2015 videos.
+
 My notes are here in the readme file as I work through the [course syllabus](http://cs109.github.io/2015/pages/schedule.html) and the [labs and homeworks](https://porter.io/github.com/cs109/content). 
 
 **Study Suggestions before starting:**
@@ -16,7 +18,7 @@ My notes are here in the readme file as I work through the [course syllabus](htt
 
 [Lecture 1](https://github.com/khalido/cs109-2015/blob/master/Lectures/01-Introduction.pdf):
 
-- introduces data science, some 
+- introduces data science.  
  
 
 ## Week 2: Intro Data Analysis and Viz
@@ -28,6 +30,11 @@ Lab 1 has three very introductory notebooks: [pythonpandas](https://github.com/k
 After doing the three intro notebooks, [hw0](https://github.com/khalido/cs109-2015/blob/master/Labs/2015lab1/hw0.ipynb) runs you through installing anaconda, git, and setting up a github and aws account.
 
 Hw0 has one interesting section, where you solve the [montyhall problem](https://en.wikipedia.org/wiki/Monty_Hall_problem) one step at a time. I didn't really like their steps, so made a [simpler monty hall implementation](https://github.com/khalido/algorithims/blob/master/monty_hall.ipynb).
+
+Moving on to the [Lecture 2](https://github.com/khalido/cs109-2015/blob/master/Lectures/02-DataScraping.ipynb) & its [quiz notebook](https://github.com/khalido/cs109-2015/blob/master/Lectures/02-DataScrapingQuizzes.ipynb), this goes through some more pandas and data scraping web pages and parsing them.
+
+[**Lecture 3**](https://github.com/khalido/cs109-2015/blob/master/Lectures/03-EDA.pdf)
+
 
 ## Week 3 : Databases, SQL and more Pandas
 
