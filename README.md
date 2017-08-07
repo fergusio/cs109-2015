@@ -1,4 +1,4 @@
-All right, this git repo is me working through the CS109 class, one lab at a time.
+All right, this git repo is me working through [Harvard's 2015 CS109 class](http://cs109.github.io/2015/), one lab at a time.
 
 To start:
 - [Lecture videos & notes](http://cs109.github.io/2015/pages/videos.html)
@@ -9,24 +9,25 @@ My notes are here in the readme file as I work through the [course syllabus](htt
 
 - Use a internet blocker app [SelfControl](https://selfcontrolapp.com/) to stop procrastinating and a [pomodoro app] to break up study into chunks. 
 - Buy a paper notebook and write notes as you watch the videos and do the labs.
-- Get a second monitor so you can watch videos/have lab notebooks & pdf open and work through at the same time.
-- Don't look at the lab and hw answers - try to do them first on your own.
+- Get a second monitor so you can watch videos/have lab notebooks open and work through at the same time.
+- Don't look at the lab and hw answers - try to do them first on your own. Discuss with others before looking at solutions.
 
 ## Week 1: What is Data Science
 
-Starting with [Lecture 1](https://github.com/khalido/cs109-2015/blob/master/Lectures/01-Introduction.pdf)
+[Lecture 1](https://github.com/khalido/cs109-2015/blob/master/Lectures/01-Introduction.pdf):
 
-There are three very introductory notebooks: [pythonpandas](https://github.com/khalido/cs109-2015/blob/master/Labs/2015lab1/Lab1-pythonpandas.ipynb), followed by [babypython](https://github.com/khalido/cs109-2015/blob/master/Labs/2015lab1/Lab1-babypython.ipynb), and finally [git](https://github.com/khalido/cs109-2015/blob/master/Labs/2015lab1/Lab1-git.ipynb). However, since the course dates back to 2015, some of the python is a bit dated and uses 2.x code. 
-
-After doing the three intro notebooks, [hw0](https://github.com/khalido/cs109-2015/blob/master/Labs/2015lab1/hw0.ipynb) runs you through installing anaconda, git, and setting up a github and aws account.
-
-Hw0 has one interesting section, where you solve the montyhall problem one step at a time. I didn't really like their steps, so made a [simpler monty hall implementation](https://github.com/khalido/algorithims/blob/master/monty_hall.ipynb). 
+- introduces data science, some 
+ 
 
 ## Week 2: Intro Data Analysis and Viz
 
 The lecture 2 notebook goes through getting data and putting it into a pandas dataframe.
 
-Hw 1 - link to it?
+Lab 1 has three very introductory notebooks: [pythonpandas](https://github.com/khalido/cs109-2015/blob/master/Labs/2015lab1/Lab1-pythonpandas.ipynb), followed by [babypython](https://github.com/khalido/cs109-2015/blob/master/Labs/2015lab1/Lab1-babypython.ipynb), and finally [git](https://github.com/khalido/cs109-2015/blob/master/Labs/2015lab1/Lab1-git.ipynb). However, since the course dates back to 2015, some of the python is a bit dated and uses 2.x code. 
+
+After doing the three intro notebooks, [hw0](https://github.com/khalido/cs109-2015/blob/master/Labs/2015lab1/hw0.ipynb) runs you through installing anaconda, git, and setting up a github and aws account.
+
+Hw0 has one interesting section, where you solve the [montyhall problem](https://en.wikipedia.org/wiki/Monty_Hall_problem) one step at a time. I didn't really like their steps, so made a [simpler monty hall implementation](https://github.com/khalido/algorithims/blob/master/monty_hall.ipynb).
 
 ## Week 3 : Databases, SQL and more Pandas
 
