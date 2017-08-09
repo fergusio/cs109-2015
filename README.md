@@ -33,7 +33,10 @@ Hw0 has one interesting section, where you solve the [montyhall problem](https:/
 
 Moving on to the [Lecture 2](https://github.com/khalido/cs109-2015/blob/master/Lectures/02-DataScraping.ipynb) & its [quiz notebook](https://github.com/khalido/cs109-2015/blob/master/Lectures/02-DataScrapingQuizzes.ipynb), this goes through some more pandas and data scraping web pages and parsing them.
 
-[**Lecture 3**](https://github.com/khalido/cs109-2015/blob/master/Lectures/03-EDA.pdf)
+**Lecture 3** ([slides](https://github.com/khalido/cs109-2015/blob/master/Lectures/03-EDA.pdf), [video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=a4e81697-fd86-415c-9b29-c14ea7ec15f2)):
+
+ - ask a q, get data to answer it, explore & check data, then model it and finally communicate and visualize the results.
+ - keep viz simple and think of the [kind of chart](http://extremepresentation.typepad.com/blog/files/choosing_a_good_chart.pdf) needed. 
 
 
 ## Week 3 : Databases, SQL and more Pandas
