@@ -46,6 +46,9 @@ I made a couple of notebooks
 
 ## Week 3 : Databases, SQL and more Pandas
 
+[Lab 2](https://github.com/khalido/cs109-2015/blob/master/Labs/2015lab2/Lab2.ipynb) introduces web scraping with [requests](http://docs.python-requests.org/en/master/) and then parsing html with [beautiful soup 4](https://www.crummy.com/software/BeautifulSoup/bs4/doc/.
+
+
 ## Week 4: Regression
 
 HW 2
