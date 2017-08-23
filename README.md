@@ -68,15 +68,24 @@ Lecture 5 ([slides](https://github.com/cs109/2015/raw/master/Lectures/05-Statist
 
 Lecture 6 ([slides](https://github.com/cs109/2015/raw/master/Lectures/06-StoryTelling.pdf), [video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=afe70053-b8b7-43d3-9c2f-f482f479baf7)) is on how to tell stories with data. 
 
+Good insights on how to tell a story with data. Infer, model, use an algorithim and draw conclusions (and check!).  
+
 - Start with two fundamental questions:
     - Whats the goal? think first of that rather than going first to all the many ways you can slice and dice data.
     - Who cares? Know your audience and tell them a story. Have a clear sense of direction and logic. 
 - Read some howto's on scientific writing
 - have some memorable examples or small stories
 
+Tell a story:
+- know your audience and why/what they care about this data - what do they want?
+- Don't make them think - clearly tell them what you want them to know in a way they can follow. highlight key facts and insights. 
+- unexpectedness - show something the audience didn't expect. I liked the story which highlighted that bigfoot sightings are dropping sharply 
+- What tools can we give the audience? For example, a web app for them to further explore the data, or a takeaway presentation with key points.
+- be careful of your point of view and don't distort the data, but depending on the audience you can frame your story - for example presenting war deaths in red rather than a regular plot color.
+- important to put the message up front - what does my graph show? Show it in stages if a lot of data, highlighting what to look at. Design matters. 
 
-
-Infer, model, use an algorithim and draw conclusions (and check!) 
+More resources:
+- [The Functional Art](http://www.thefunctionalart.com/)
 
 Lecture 7 ([slides](https://github.com/cs109/2015/raw/master/Lectures/07-BiasAndRegression.pdf), [video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=afe70053-b8b7-43d3-9c2f-f482f479baf7)) covers 
 
