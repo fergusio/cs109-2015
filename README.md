@@ -89,9 +89,76 @@ More resources:
 
 ### Lecture 7 ([slides](https://github.com/cs109/2015/raw/master/Lectures/07-BiasAndRegression.pdf), [video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=afe70053-b8b7-43d3-9c2f-f482f479baf7))
 
-Regression and more
+- think about bias, missing data, etc
+- combine independent, unbiased estimators for a parameter into one:
+    - fisher weighting
+    - nate silver weighting method
+- Bonferroni
+- good segment on weighting variables
+- regression towards the mean
+- think of regression in terms of population or a projection of the column space of x - i.e what combination of the variables of x gets us closest to the value of y?
+- linear regression means we're taking linear combination of predictors, the actual regression equation can be nonlinear
+- what function of x gives the best predictor of y? 
+- Gauss-Markov Theorem
+- the residuals are the diff  b/w the actual value of y and the predicted value - plot residuals vs fitted values and vs each predictor variable - good way to eyeball quality of linear regression model
+- variance R^2 measures goodness of fit, but doesn't mean model is good. 
+- Best way to check a model is prediction.
 
 ## Week 5: Scikit learn
+
+### Lab 4 - Regression in Python ([video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=483c8b93-3700-4ee8-80ed-aad7f3da7ac2), [notebook](https://github.com/khalido/cs109-2015/blob/master/Labs/2015lab4/Lab4-stats.ipynb))
+
+- [Wikipeda article](https://en.wikipedia.org/wiki/Linear_regression)
+- We have data X, which is related to Y in some way.
+- Linear regression uses X to predict Y, and also tells us the predictive power of each variable of X
+- Linear regression assumes the distribution of each Y is normal (which isn't always so)
+- there are many ways to fit a linear regression model, most common is the [least squares](http://en.wikipedia.org/wiki/Least_squares) method
+- be careful that the features (variables in X) aren't too similar
+- explore your data, plot variables, scatterplots etc. Use seaborn to plot regression.
+- use [sklearn to split dataset into a train/test](http://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html)
+- use [cross-validation](http://scikit-learn.org/stable/modules/cross_validation.html) 
+- overfitting happens when the model 'learns' the train data so performs better on that than the test dataset
+- there are [many types of regressions](http://www.datasciencecentral.com/profiles/blogs/10-types-of-regressions-which-one-to-use) so think about which one to use
+- Logistic regression - used where outcome is binary, for example a chance of success/failure. read:[Adit's explanation.](http://adit.io/posts/2016-03-13-Logistic-Regression.html)
+
+### Lecture 8: More Regression ([video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=664f668e-e008-4f44-8600-e09ee6d629b0), [slides](https://github.com/khalido/cs109-2015/blob/master/Lectures/08-RegressionContinued.pdf))
+
+- collinerarity - when some variables are highly correlated with each other - this is bad
+- Logistic Regression
+- Odds Ratio: ratio of two different people's odds of an outcome.
+- Crude Odds Ratio Estimate - quick estimate but flawed as doesn't control for anything.
+- Confounding Factors - i.e is one group pre-disposed to our outcome for some reason?
+- Curse of dimensionality - in high d settings, vast majority of data is near boundaries, not center. But, high d can also be a [blessing](http://andrewgelman.com/2004/10/27/the_blessing_of/).
+- dealing with high dimensionality: ridge regression, shrinkage estimation
+- Stein's Paradox [wikipedia](https://en.wikipedia.org/wiki/Stein%27s_example), [good article](http://statweb.stanford.edu/~ckirby/brad/other/Article1977.pdf)
+- LASSO and Ridge help with high D data by reducing features
+    - Lasso does L1 regularization, reduces number of features
+    - Ridge does L2 regularization, doesn't necessarily reduce features but reduces the impace of features on the model by reducing coefficient value
+- Elasticnet does both L1 and L2 regularization
+
+### Lecture 9: Classification ([video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=c322c0d5-9cf9-4deb-b59f-d6741064ba8a), [slides](https://github.com/khalido/cs109-2015/blob/master/Lectures/09-ClassificationPCA.pdf))
+
+- we take data and assign labels
+- 1 nearest neighbour - simple classification method for low d data
+    - slow, has to check all points to find nearest neighbour
+- k nearest neighbours - use k nearest points to find decision boundary
+    - find ideal k 
+    - what distance function to use? 
+- cross validation - for 5 fold cross validation, the data is split into 6 folds - 4 for training, one for validation and the sixth for testing, which is only used at the end.
+- CIFAR-10 for 60K images - is split into 50K training and 10K test
+    - pics are 32x32x3
+- L1 distance is the absolute diff b/w two vectors
+- L2 is the Euclidean distance i.e "ordinary" straight-line distance
+- for images, l1 and l2 are pretty bad, so there are a lot more methods
+- more features are good for classification, but too many features means the data gets sparse - the curse of dimensionality strikes
+- so often we want to reduce dimensionality
+- Principal Component Analysis - project a dataset from many variables into fewer less correlated ones, called the principal components.
+- Singular Value Decomposition (SVD) - computational method to calculate pricipal components of a dataset. It transforms a large matrix of data into three smallter matrixes: `A (m*n) = U(m*r) x E(r*r) x V(r*n)`. The values in the middle matrix `r*r` are the *singular* values and we can discard bits of them to reduce the amount of data to a more manageable number. 
+
+
+Watch [Statistics for Hackers](https://www.youtube.com/watch?v=Iq9DzN6mvYA)
+
+### HW2 Q1
 
 ## Week 6: SVM, trees and forests
 
@@ -123,3 +190,10 @@ hw5
 ## Week 12: Deep LEarning
 
 ## Week 13: Final Project & Wrapup
+
+
+# Additional Resources
+Stuff I found useful to understand the class material better.
+
+- [Computational and Inferential Thinking](https://ds8.gitbooks.io/textbook/content/) - the textbook for UC Berkely's [Foundations of Data Science class](http://data8.org/.
+- [Pythonb Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/)
