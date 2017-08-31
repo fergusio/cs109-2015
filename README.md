@@ -104,7 +104,7 @@ More resources:
 - variance R^2 measures goodness of fit, but doesn't mean model is good. 
 - Best way to check a model is prediction.
 
-## Week 5: Scikit learn
+## Week 5: Scikit learn & regression
 
 ### Lab 4 - Regression in Python ([video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=483c8b93-3700-4ee8-80ed-aad7f3da7ac2), [notebook](https://github.com/khalido/cs109-2015/blob/master/Labs/2015lab4/Lab4-stats.ipynb))
 
@@ -119,6 +119,9 @@ More resources:
 - use [cross-validation](http://scikit-learn.org/stable/modules/cross_validation.html) 
 - overfitting happens when the model 'learns' the train data so performs better on that than the test dataset
 - there are [many types of regressions](http://www.datasciencecentral.com/profiles/blogs/10-types-of-regressions-which-one-to-use) so think about which one to use
+- for high d data, closed form vs gradient decent:
+    - closed form - use math to solve. this becomes computationally intensive very quickly, is ordered n cubed
+    - gradient descent is O(n), so for large high d data it's gradient descent all the way
 - Logistic regression - used where outcome is binary, for example a chance of success/failure. read:[Adit's explanation.](http://adit.io/posts/2016-03-13-Logistic-Regression.html)
 
 ### Lecture 8: More Regression ([video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=664f668e-e008-4f44-8600-e09ee6d629b0), [slides](https://github.com/khalido/cs109-2015/blob/master/Lectures/08-RegressionContinued.pdf))
@@ -152,21 +155,26 @@ More resources:
 - for images, l1 and l2 are pretty bad, so there are a lot more methods
 - more features are good for classification, but too many features means the data gets sparse - the curse of dimensionality strikes
 - so often we want to reduce dimensionality
-- Principal Component Analysis - project a dataset from many variables into fewer less correlated ones, called the principal components.
+- Principal Component Analysis - project a dataset from many variables into fewer less correlated ones, called the principal components. 
 - Singular Value Decomposition (SVD) - computational method to calculate pricipal components of a dataset. It transforms a large matrix of data into three smallter matrixes: `A (m*n) = U(m*r) x E(r*r) x V(r*n)`. The values in the middle matrix `r*r` are the *singular* values and we can discard bits of them to reduce the amount of data to a more manageable number. 
+- [good pca and svd explanation](https://medium.com/machine-learning-for-humans/unsupervised-learning-f45587588294)
+- Watch [Statistics for Hackers](https://www.youtube.com/watch?v=Iq9DzN6mvYA)
 
+### HW2 Q1 
 
-Watch [Statistics for Hackers](https://www.youtube.com/watch?v=Iq9DzN6mvYA)
-
-### HW2 Q1
+- [notebook](https://github.com/khalido/cs109-2015/blob/master/homework/HW2.ipynb)
+- Uses svd and pca to analyze gene data
 
 ## Week 6: SVM, trees and forests
 
-Now the course finally gets interesting.
+Now the course finally gets interesting. Before starting this weeks work, think about project ideas and see [Hans Rosling](https://www.gapminder.org/videos/) videos to see how to present data. Pitch this project idea (to study group or the internet at large).
 
-Pitch a project idea (to study group or the internet at large).
+There are quite a few companies automating the entire datascience chain, so the key is being able to present your findings well.
 
-hw 3
+### HW 2 Questions 2,3 & 4 [notebook](https://github.com/khalido/cs109-2015/blob/master/homework/HW2.ipynb)
+
+
+
 
 ## Week 7: Machine Learning best practices
 
@@ -174,6 +182,7 @@ Around Week 7 or 8, start [project](http://cs109.github.io/2015/pages/projects.h
 
 > Towards the end of the course you will work on a month-long data science project. The goal of the project is to go through the complete data science process to answer questions you have about some topic of your own choosing. You will acquire the data, design your visualizations, run statistical analysis, and communicate the results. You will work closely with other classmates in a 3-4 person project team.
 
+hw 3
 
 ## Week 8: EC2 and Spark
 
