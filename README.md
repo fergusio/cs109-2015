@@ -171,6 +171,32 @@ Now the course finally gets interesting. Before starting this weeks work, think 
 
 There are quite a few companies automating the entire datascience chain, so the key is being able to present your findings well.
 
+### Lab 5: Machine Learning ([vidoe](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=e509f996-9633-4b75-a48a-e29246a316db))
+
+Learning Models [notebook]:(https://github.com/khalido/cs109-2015/blob/master/Labs/2015lab5/LearningModels.ipynb)
+- we often have a small sample of a much dataset, and we want to predict the larger data from our sample.
+- this isn't just statistical analysis, as we make models which involve domain knowledge and choices.
+- need to think about whether our sample is in some way representative of the population
+- Stochastic noise, i.e randomness
+- systematic error, i.e where the sampling isn't representative, like polling ppl using landlines
+- overfitting: models can 'memrize the the data points in the training set, becoming useless or inaccurate at predicting real world data. With many data sets a more and more complex dataset will keep getting better while getting worse on test/validation data. The best model minimizes test set error, and not training set error.
+- great illustration of variance at 24:30 and 35min in the video
+- use `from sklearn.cross_validation import train_test_split` for splitting datasets into a train test split. See [sklearn](http://scikit-learn.org/stable/)
+- sklearn has 3 main features:
+    - build and fit models
+    - predict
+    - transform data.
+- sklearn expects days in a 2d array or a matrix of size `[n_samples, n_features]`, so reshape 1d data using `np.reshape(-1,1)`
+- Validation - keep a chunk of data seperate to check the model after training on the test/train data.
+- Cross Validation: randomly split data into K diff train/test splits - so you traion on K-1 partitions and test on 1, so there are a total of K combinations, leading to K risks. This leads to better results then just doing one test/train split.
+
+Classification [notebook](https://github.com/khalido/cs109-2015/blob/master/Labs/2015lab5/Classification.ipynb)
+- not started yet
+
+### Lecture 10: SVM, Evaluation
+
+### Lecture 11: Decision Trees and Random Forests
+
 ### HW 2 Questions 2,3 & 4 [notebook](https://github.com/khalido/cs109-2015/blob/master/homework/HW2.ipynb)
 
 
