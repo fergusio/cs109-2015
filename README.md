@@ -147,6 +147,7 @@ More resources:
 - k nearest neighbours - use k nearest points to find decision boundary
     - find ideal k 
     - what distance function to use? 
+    - my own very simple [kNN algo implementation](https://github.com/khalido/algorithims/blob/master/k%20nearest%20neighbours.ipynb)
 - cross validation - for 5 fold cross validation, the data is split into 6 folds - 4 for training, one for validation and the sixth for testing, which is only used at the end.
 - CIFAR-10 for 60K images - is split into 50K training and 10K test
     - pics are 32x32x3
@@ -171,9 +172,10 @@ Now the course finally gets interesting. Before starting this weeks work, think 
 
 There are quite a few companies automating the entire datascience chain, so the key is being able to present your findings well.
 
-### Lab 5: Machine Learning ([vidoe](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=e509f996-9633-4b75-a48a-e29246a316db))
+### Lab 5: Machine Learning
 
-Learning Models [notebook]:(https://github.com/khalido/cs109-2015/blob/master/Labs/2015lab5/LearningModels.ipynb)
+**Learning Models** ([notebook](https://github.com/khalido/cs109-2015/blob/master/Labs/2015lab5/LearningModels.ipynb), [video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=e509f996-9633-4b75-a48a-e29246a316db))
+
 - we often have a small sample of a much dataset, and we want to predict the larger data from our sample.
 - this isn't just statistical analysis, as we make models which involve domain knowledge and choices.
 - need to think about whether our sample is in some way representative of the population
@@ -188,12 +190,49 @@ Learning Models [notebook]:(https://github.com/khalido/cs109-2015/blob/master/La
     - transform data.
 - sklearn expects days in a 2d array or a matrix of size `[n_samples, n_features]`, so reshape 1d data using `np.reshape(-1,1)`
 - Validation - keep a chunk of data seperate to check the model after training on the test/train data.
-- Cross Validation: randomly split data into K diff train/test splits - so you traion on K-1 partitions and test on 1, so there are a total of K combinations, leading to K risks. This leads to better results then just doing one test/train split.
+- Cross Validation: randomly split data into K diff train/test splits - so you traion on K-1 partitions and test on 1, so there are a total of K combinations, leading to K risks. This leads to better results then just doing one test/train split. 
+- regularization helps with overfitting
 
-Classification [notebook](https://github.com/khalido/cs109-2015/blob/master/Labs/2015lab5/Classification.ipynb)
-- not started yet
+**Classification** ([notebook](https://github.com/khalido/cs109-2015/blob/master/Labs/2015lab5/Classification.ipynb), [video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=90e73c64-855c-4b06-afb2-94da608ecfbf))
+
+- sort data into classes, i.e what kind of fruit
+- most datasets can be projected onto a lower dimensial space, for e.g using PCA
+- read sklearn's PCA docs
+- kNN:
+- Logistic Regression - use [sklearn](http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html), main paramater is C which defines how much to regularize the data. Read [this explanation](http://adit.io/posts/2016-03-13-Logistic-Regression.html)
+- Use sklearns [GridSearchCV](http://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html) to find hyperparameters
+- one way to classify: use [PCA](http://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html) to reduce the feature space, then use logistic regression to classify 
+- many datatypes, like images, have tons of features, so important to reduce dimensionality.
+- [sklearn PCA](http://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html) returns the principal components in order of how much they explain the data:
+
+```python
+from sklearn.decomposition import PCA
+pca = PCA(n_components=60) # PCA with no. of components to return
+X = pca.fit_transform(data)
+print(pca.explained_variance_ratio_) # how much of variance is explained
+```
+
+- sklearn uses the same interface for all its classifiers, so makes it easy to put a wrapper around gridsearchCV and pass in diff classifiers to compare.
+- discriminative classifier - finds the decision boundary b/w classes
+- maximum-margin classifier - for many classifincation problems, multiplie diff lines can seperate classes. Choose that line where the margin b/w classes is the largest, which makes this model senstive to boundaries b/w classes, rather than to point samples deep inside a class. 
+- SVM is a discrimant classier which finds the widest possible margin b/w classes, including some points touching the boundary which are called the support vectors. (since they support or establish the margins.)
+
 
 ### Lecture 10: SVM, Evaluation
+
+- KNN - training is fast, prediction slow since we need to check all the data points to find the nearest neighbours
+- but if we know the decision boundary (the seperating hyperplane) we don't need all the data points
+    - w: weight vector defines the orientation of the hyperplane, and bias b. 
+    - so a new point x is classified by `w(transpose)*x + b`
+    - this is the mathematical model of a neuron, invented 1957 by Rosenblatt
+- step function vs sigmoid activation
+- Support Vector Machines (SVM) are widely used, some consider it best of the shelf classifier. They add a new dimension to help seperate classes and also use maximum margin classification. SVM is called svm becuase of the support vectors defining the max margin lines for the classification boundary.
+- large data is good for training svm as the points on the boundary are rare and svm cares about establishing the boundary
+- since outliers can change the svm boundaries, there is a concept of slack variables - it allows the SVM to missclassify outliers to make a neat decision boundary. sklearn uses the parameter C to define the slack. the lower the number the more the slack.
+- kernel tricks for svm - go to aribitarily mary dimensions with little computational cost. need to think about what kernel to use.
+- read [Andrew Ng's cs229 svm notes](http://cs229.stanford.edu/notes/cs229-notes3.pdf)
+- todo: tale sklearns 'faces' dataset and use svm to predict
+
 
 ### Lecture 11: Decision Trees and Random Forests
 
