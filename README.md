@@ -172,6 +172,10 @@ Now the course finally gets interesting. Before starting this weeks work, think 
 
 There are quite a few companies automating the entire datascience chain, so the key is being able to present your findings well.
 
+### HW 2 Questions 2,3 & 4 [notebook](https://github.com/khalido/cs109-2015/blob/master/homework/HW2.ipynb)
+
+H2 depends wholly on week 5, so good idea to get it done first.
+
 ### Lab 5: Machine Learning
 
 **Learning Models** ([notebook](https://github.com/khalido/cs109-2015/blob/master/Labs/2015lab5/LearningModels.ipynb), [video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=e509f996-9633-4b75-a48a-e29246a316db))
@@ -232,13 +236,49 @@ print(pca.explained_variance_ratio_) # how much of variance is explained
 - kernel tricks for svm - go to aribitarily mary dimensions with little computational cost. need to think about what kernel to use.
 - read [Andrew Ng's cs229 svm notes](http://cs229.stanford.edu/notes/cs229-notes3.pdf)
 - todo: tale sklearns 'faces' dataset and use svm to predict
+- svm tips:
+    - normalize data to 0,1 or -1,1 interval. (check whether the library already normalizes)
+    - RBF kernel is a good default
+    - Read Chich-Wei Hsu practical guide to SVM
+    - tune paramaters - which kernel, what parameters for it and what C?
+- ROC curve: plot true positive rate vs false positive rate
+    - true +ve is tp/(tp+fn)
+    - false +ve is fp/(fp+tn)
+    - one useful summary stat is area under the curve
+- Precision Recall Curve [sklearn](http://scikit-learn.org/stable/auto_examples/model_selection/plot_precision_recall.html), [quora](https://www.quora.com/What-is-Precision-Recall-PR-curve)
+    - Precision: `tp/(tp+fp)` - how much are we getting right, or the probability a a random +ve sample is actually +ve (since some +ve samples are false positives).
+    - Recall `tp/(tp+fn)` - same as in the ROC, how much of the data are we finding. for a random +ve sameple, the probability that it's making a correct prediction. (consider the false negatives.)
+    - ideally we want both to be one.
+- good way to compare classifiers
+- How do you classify multple classes with a SVM, e.g 10 types of fruit
+    - One vs all - pick one class, and train it against all the other classes one by one. So you train n classifers for n classes.
+    - One vs One - Train n(n-1)/2 classifiers, take majority vote
+    - use a confusion matrix of predicted label vs true labels to see classification results
 
+### Lecture 11: Decision Trees and Random Forests ([video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=8892a8b7-25eb-4bc5-80b6-47b9cf681a05), [slides](https://github.com/khalido/cs109-2015/blob/master/Lectures/11-DecisionTreesAndRandomForest.pdf))
 
-### Lecture 11: Decision Trees and Random Forests
-
-### HW 2 Questions 2,3 & 4 [notebook](https://github.com/khalido/cs109-2015/blob/master/homework/HW2.ipynb)
-
-
+- Books: Read [Elements of Statiscal Learning](https://web.stanford.edu/~hastie/ElemStatLearn/) and [Pattern Recognition and Machine Learning](https://www.microsoft.com/en-us/research/people/cmbishop/)
+- Decision Tree - fast training and prediction, easy to understand and interpret. DT basically paritions a feature space into cells using a series of decision rules on one feature at a time
+- which feature to query and what thresholds to use?
+- node purity: do splits so cells are pure, i.e have only one class in them
+    - Gini Impurity gives us the expected error of predicted a class from a random sample
+    - Gini Index
+    - Node purity gain: compare gini impurity of parent vs child nodes. Lets us see whether a split has improved classification better than a simple missclassification number.
+- Optimal trees - diff ways to get there
+- Tree pruning - easy to overfit, so first we make the tree, then go backwards and remove 'bad' decisions, or merge cells etc.
+- DT disadvatages: sensitive to small changes in data, overfit, only axis aligned splits
+- DT vs SVM: 
+- Netflix prize winners used an ensemble of over 800 models. somewhat disapointing as they didn't come up with a new method
+- DT doesn't perform well, but what if we use many of them?
+- Bootstrap is one way to do this. It's a resampling method from statistics, useful to get error bags on estimates.
+    - Bootstrap lets us generate more sample sets from one dataset, each one slightly different.
+    - Take N data points and draw N times with replacement, then get an estimate from each bootstrapped samples. 
+    - bagging: bootstrap aggregrating, where you learn a classifer from each bootstrap sample and average the . (normally uses just one type of classifier)
+        - See [bootstrap example notebook](https://github.com/khalido/cs109-2015/blob/master/Bootstrapping.ipynb)
+        - bagged DT's perform better than one a single tree
+        - not useful for linear models
+    - Bias-Variance trade off: train models with a high variance, then the average might get close  
+- **Random Forest** builds on bagging, builds a tree from each bootstrap sample with node splits selected from random feature subsets. See [1](http://blog.yhat.com/posts/random-forests-in-python.html), or rather [2](https://chrisalbon.com/machine-learning/random_forest_classifier_example_scikit.html)
 
 
 ## Week 7: Machine Learning best practices
