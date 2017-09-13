@@ -283,11 +283,43 @@ print(pca.explained_variance_ratio_) # how much of variance is explained
 
 ## Week 7: Machine Learning best practices
 
-Around Week 7 or 8, start [project](http://cs109.github.io/2015/pages/projects.html).
+HW 3 Q1 due
+
+Start the [project](http://cs109.github.io/2015/pages/projects.html)
 
 > Towards the end of the course you will work on a month-long data science project. The goal of the project is to go through the complete data science process to answer questions you have about some topic of your own choosing. You will acquire the data, design your visualizations, run statistical analysis, and communicate the results. You will work closely with other classmates in a 3-4 person project team.
 
-hw 3
+### Lab 6: 
+
+**Classification, Probabilities, ROC curves, and Cost** ([video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=83dfe4c9-fa1b-429c-a84c-839195fbede8),[notebook](https://github.com/cs109/2015lab6/blob/master/lab6-classification-redux.ipynb))
+
+- Not a very useful lab, essentially better of from sciki-learn understand how to use:
+    - [Logistic Regression](http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html)
+    - [SVM](http://scikit-learn.org/stable/modules/svm.html), or [swm with kernels](http://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html) - [good tutorial](https://www.oreilly.com/learning/intro-to-svm)
+    - [Confusion Matrix](http://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html)
+
+**Comparing Models** ([video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=4676adde-557f-469b-bca8-5ffe868094eb), [notebook](https://github.com/cs109/2015lab6/blob/master/lab6-churn.ipynb))
+
+- learn Bayes classifiers in sklean
+- use [ROC](https://en.wikipedia.org/wiki/Receiver_operating_characteristic) curves - often accuracy is the the relevant, the true +ve and false -ve rate is more important. Since False negatives can be costly, you often want to change the threshold probability from the default 0.5. So write your own prediction function as the sklearn one uses 0.5, or with bayes classifiers adjust the prior probability. 
+- sklearn has a [roc function](http://scikit-learn.org/stable/auto_examples/model_selection/plot_roc.html#sphx-glr-auto-examples-model-selection-plot-roc-py), [tutorial](http://benalexkeen.com/scoring-classifier-models-using-scikit-learn/)
+
+## Lecture 12: Ensemble Methods ([video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=4831ebf0-7832-42c5-9339-5b5e08dd3e92), [slides](https://github.com/cs109/2015/blob/master/Lectures/12-Ensemble%20Learning%20and%20Random%20Forests.pdf))
+
+- philisophical point: who do ensenble methods work so well? in real life wisdom of the crowds is overrated, but it does a lot better in computerland. Some averaging methods pick up useful stuff in the data, while others cancel out each others errors.
+- Decision trees are easy but have poor predictive accuracy, tend to ovefit
+- Ensemble learning combines many learners using methods like weighted avg, boosting, etc. See [sklearn's ensemble page](http://scikit-learn.org/stable/modules/ensemble.html)
+- [random forests](http://scikit-learn.org/stable/modules/ensemble.html#forest) is an extension of bagging of decision trees
+    - random forests using sqrt(features) of random predicters to make trees give the best results
+- Boosting is another ensemble method like bagging, but better for most applications. 
+    - tune by num of trees, splits in each tree, weights
+    - often using very simple trees, which you adjust the weights as u make more trees to classify better the things u got wrong. At the end u make a weighted avg.
+    - most popular & succesful boosting algorithim is [AdaBoost](http://scikit-learn.org/stable/modules/ensemble.html#adaboost)
+
+## Lecture 13: Best Practices ([video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=b33eec92-d049-4353-a904-5054eb718aff), [slides](https://github.com/cs109/2015/blob/master/Lectures/13-BestPractices_Recommendations.pdf))
+
+- 
+
 
 ## Week 8: EC2 and Spark
 
