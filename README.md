@@ -283,7 +283,7 @@ print(pca.explained_variance_ratio_) # how much of variance is explained
 
 ## Week 7: Machine Learning best practices
 
-HW 3 Q1 due
+[HW 3 Q1 due](https://github.com/khalido/cs109-2015/blob/master/homework/HW3.ipynb): a lot of pandas manipulation on baseball data
 
 Start the [project](http://cs109.github.io/2015/pages/projects.html)
 
@@ -316,6 +316,8 @@ Start the [project](http://cs109.github.io/2015/pages/projects.html)
     - often using very simple trees, which you adjust the weights as u make more trees to classify better the things u got wrong. At the end u make a weighted avg.
     - most popular & succesful boosting algorithim is [AdaBoost](http://scikit-learn.org/stable/modules/ensemble.html#adaboost)
 
+Note: read [this series on machine learning](https://medium.com/machine-learning-for-humans/why-machine-learning-matters-6164faf1df12)
+
 ## Lecture 13: Best Practices ([video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=b33eec92-d049-4353-a904-5054eb718aff), [slides](https://github.com/cs109/2015/blob/master/Lectures/13-BestPractices_Recommendations.pdf))
 
 - 
@@ -323,7 +325,7 @@ Start the [project](http://cs109.github.io/2015/pages/projects.html)
 
 ## Week 8: EC2 and Spark
 
-hw4
+HW3 q2&3 are relatively quicker than q1, its just using gridsearchCV to find best parameters for two simple datasets.
 
 ## Week 9: Bayes!
 
