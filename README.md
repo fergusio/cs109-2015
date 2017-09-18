@@ -233,7 +233,7 @@ print(pca.explained_variance_ratio_) # how much of variance is explained
 - Support Vector Machines (SVM) are widely used, some consider it best of the shelf classifier. They add a new dimension to help seperate classes and also use maximum margin classification. SVM is called svm becuase of the support vectors defining the max margin lines for the classification boundary.
 - large data is good for training svm as the points on the boundary are rare and svm cares about establishing the boundary
 - since outliers can change the svm boundaries, there is a concept of slack variables - it allows the SVM to missclassify outliers to make a neat decision boundary. sklearn uses the parameter C to define the slack. the lower the number the more the slack.
-- kernel tricks for svm - go to aribitarily mary dimensions with little computational cost. need to think about what kernel to use.
+- kernel tricks for svm - go to aribitarily mary dimensions with little computational cost. need to think about what kernel to use. Read [What are kernels in machine learning and SVM and why do we need them?](https://www.quora.com/What-are-kernels-in-machine-learning-and-SVM-and-why-do-we-need-them).
 - read [Andrew Ng's cs229 svm notes](http://cs229.stanford.edu/notes/cs229-notes3.pdf)
 - todo: tale sklearns 'faces' dataset and use svm to predict
 - svm tips:
@@ -304,8 +304,9 @@ Start the [project](http://cs109.github.io/2015/pages/projects.html)
 - use [ROC](https://en.wikipedia.org/wiki/Receiver_operating_characteristic) curves - often accuracy is the the relevant, the true +ve and false -ve rate is more important. Since False negatives can be costly, you often want to change the threshold probability from the default 0.5. So write your own prediction function as the sklearn one uses 0.5, or with bayes classifiers adjust the prior probability. 
 - sklearn has a [roc function](http://scikit-learn.org/stable/auto_examples/model_selection/plot_roc.html#sphx-glr-auto-examples-model-selection-plot-roc-py), [tutorial](http://benalexkeen.com/scoring-classifier-models-using-scikit-learn/)
 
-## Lecture 12: Ensemble Methods ([video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=4831ebf0-7832-42c5-9339-5b5e08dd3e92), [slides](https://github.com/cs109/2015/blob/master/Lectures/12-Ensemble%20Learning%20and%20Random%20Forests.pdf))
+### Lecture 12: Ensemble Methods 
 
+- ([video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=4831ebf0-7832-42c5-9339-5b5e08dd3e92), [slides](https://github.com/cs109/2015/blob/master/Lectures/12-Ensemble%20Learning%20and%20Random%20Forests.pdf))
 - philisophical point: who do ensenble methods work so well? in real life wisdom of the crowds is overrated, but it does a lot better in computerland. Some averaging methods pick up useful stuff in the data, while others cancel out each others errors.
 - Decision trees are easy but have poor predictive accuracy, tend to ovefit
 - Ensemble learning combines many learners using methods like weighted avg, boosting, etc. See [sklearn's ensemble page](http://scikit-learn.org/stable/modules/ensemble.html)
@@ -318,16 +319,54 @@ Start the [project](http://cs109.github.io/2015/pages/projects.html)
 
 Note: read [this series on machine learning](https://medium.com/machine-learning-for-humans/why-machine-learning-matters-6164faf1df12)
 
-## Lecture 13: Best Practices ([video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=b33eec92-d049-4353-a904-5054eb718aff), [slides](https://github.com/cs109/2015/blob/master/Lectures/13-BestPractices_Recommendations.pdf))
+### Lecture 13: Best Practices 
 
-- 
-
+- ([video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=b33eec92-d049-4353-a904-5054eb718aff), [slides](https://github.com/cs109/2015/blob/master/Lectures/13-BestPractices_Recommendations.pdf))
+- story telling is important for data scientists - explain whats going on, even in your own notebooks. good presentation is very important.
+- Diff b/w bagging and random forest: rf has bagging idea + random feature subsets
+- didn't really find this video that useful, for example:
+    - knn and trees can be used for regression too, but why would we?
+    - SVM's can be used for regression
+- take care to normalize your data in a sane manner
 
 ## Week 8: EC2 and Spark
 
-HW3 q2&3 are relatively quicker than q1, its just using gridsearchCV to find best parameters for two simple datasets.
+HW3 [q2](https://nbviewer.jupyter.org/github/khalido/cs109-2015/blob/master/homework/HW3.ipynb#Problem-2) uses the iris data set & [q3](https://nbviewer.jupyter.org/github/khalido/cs109-2015/blob/master/homework/HW3.ipynb#Problem-3:) uses sklearn's digits dataset and gridsearchCV to find best parameters for a KNN classifier for two simple datasets.
+
+### Lab 7: Decision Trees, Random Forests, Ensemble Methods
+
+[video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=0c645a5c-d262-4bb5-a137-3a78db60f3e7), [notebook](https://github.com/khalido/cs109-2015/blob/master/Labs/2015lab7/Lab7-Botany%20and%20Ensemble%20Methods.ipynb)
+
+- [decision trees](http://scikit-learn.org/stable/modules/tree.html#tree), but they use their own function on top of sklearn so its a bit annoying
+- [random forests](http://scikit-learn.org/stable/modules/ensemble.html#forest):
+    - take a random subsample of the data
+    - select a subset of all possible variables (at each node) and build the tree on the best split
+    - repeat, then finally take a majority vote
+- [Ensemble](http://scikit-learn.org/stable/modules/ensemble.html) learning - put together a lot of classifiers to build a better one
+- [AdaBoost Classifier](http://scikit-learn.org/stable/modules/ensemble.html#adaboost) uses weights on the training data.
+- [Gradient Boost Classifier](http://scikit-learn.org/stable/modules/ensemble.html#gradient-tree-boosting) is similar to AdaBoost but uses tree as its base classifier, can do regression or classification.
+
+### Lecture 14: Best Practices, Recommendations and MapReduce.
+
+[video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=afee45b9-dcf5-4f29-bc60-871aa78f1cf8), [slides](https://github.com/cs109/2015/raw/master/Lectures/14-Recommendations_MapReduce.pdf)
+
+- should have started final project by now, if not, start now!
+- **Nesting:** use 5 fold cross validation, take each fold and further apply 5 fold cv to find the right hyperparameters, then use those params in the original fold to train the classifier.
+- think about how and why to normalize data, e.g data already in a range from 0-1 might not need to be normalized, think about normazlization as hyperparameters to your model.
+    - get the mean estimates from your training data and use that to normalize training, validation and testing data. these values need to be stored to normalize future data.
+- know your application domain
+- many problems are to do with imbalanced data, Fixes to get balanced data for training:
+    - oversample: take bigger samples of the sparse clasess
+    - subsampling: take smaller samples of the more frequently occuring classes 
+    - or weight classes so classifier pays more attention to the sparese classes, see [sklearn](http://scikit-learn.org/stable/modules/generated/sklearn.model_selection.StratifiedKFold.html#sklearn.model_selection.StratifiedKFold)
+
+### Lecture 15: MapReduce Combiners and Spark
 
 ## Week 9: Bayes!
+
+### Lab 8: Vagrant and VirtualBox, AWS, and Spark
+
+### Lecture 16: Bayes Theorem and Bayesian Methods
 
 ## Week 10: Text
 
