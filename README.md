@@ -1,25 +1,22 @@
-All right, this git repo is me working through [Harvard's 2015 CS109 class](http://cs109.github.io/2015/), one lab at a time.
+All right, this git repo is me working through [Harvard's 2015 CS109 class](http://cs109.github.io/2015/), one lab at a time. This class was recommened at Quora and a few other places as being a good resource for practical data science, so here goes. My notes are here in the readme file as I work through the [course syllabus](http://cs109.github.io/2015/pages/schedule.html) and the [labs and homeworks](https://porter.io/github.com/cs109/content). 
 
 The stuff to watch and work through:
 - [Lecture videos & notes](http://cs109.github.io/2015/pages/videos.html)
 
 Note: download the videos using [this script](https://github.com/christopher-beckham/cs109-dl-videos), and merge [pull request 11](https://github.com/christopher-beckham/cs109-dl-videos/pull/11) to get the 2015 videos.
 
-My notes are here in the readme file as I work through the [course syllabus](http://cs109.github.io/2015/pages/schedule.html) and the [labs and homeworks](https://porter.io/github.com/cs109/content). 
-
 **Study Suggestions before starting:**
 
-- Use a internet blocker app [SelfControl](https://selfcontrolapp.com/) to stop procrastinating and a [pomodoro app] to break up study into chunks. 
-- Buy a paper notebook and write notes as you watch the videos and do the labs.
-- Get a second monitor so you can watch videos/have lab notebooks open and work through at the same time.
+- Use a internet blocker app like [SelfControl](https://selfcontrolapp.com/) to stop procrastinating and a [pomodoro app](http://tomighty.org/) to break up study into chunks. 
+- Use a paper notebook for notes as you watch the videos and do the labs.
+- Get a second monitor so you can watch videos/have lab notebooks open and work through at the same time. (I got a 1440p 27inch monitor from ebay and it made things so much easier from just using my laptop).
 - Don't look at the lab and hw answers - try to do them first on your own. Discuss with others before looking at solutions.
+
+# CS109 notes, by the class schedule:
 
 ## Week 1: What is Data Science
 
-[Lecture 1](https://github.com/khalido/cs109-2015/blob/master/Lectures/01-Introduction.pdf):
-
-- introduces data science.  
- 
+[Lecture 1](https://github.com/khalido/cs109-2015/blob/master/Lectures/01-Introduction.pdf) introduces data science. All basic stuff.
 
 ## Week 2: Intro Data Analysis and Viz
 
@@ -56,7 +53,7 @@ Lecture 5 ([slides](https://github.com/cs109/2015/raw/master/Lectures/05-Statist
  - [Think Bayes](http://greenteapress.com/wp/think-bayes/) follows on from Think Stats and covers Bayesian stats in Python.
 
 ## Week 4: Probablity, Regression and 
-  
+
 [Lab 3](https://github.com/khalido/cs109-2015/tree/master/Labs/2015lab3) has three notebooks:
 - [Lab3-Probability](https://github.com/khalido/cs109-2015/blob/master/Labs/2015lab3/Lab3-probability.ipynb) covers basic probability. Uses a lot of numpy methods, so its a good idea to brush up on numpy.
     - [scipy.stats](https://docs.scipy.org/doc/scipy/reference/stats.html) - very handy, has most stats stuff needed for DS built in.
@@ -66,7 +63,9 @@ Lecture 5 ([slides](https://github.com/cs109/2015/raw/master/Lectures/05-Statist
     - [PMF](https://en.wikipedia.org/wiki/Probability_mass_function) tells us the probability that a discrete random variable will be ecactly equal to some value
     - [CDF](https://en.wikipedia.org/wiki/Cumulative_distribution_function) function tells us the probability that a random discrete or continous variable X will take a value less than or equal to X. [Video](https://youtu.be/bGS19PxlGC4?list=PLF8E9E4FDAAA8018A)
 
-### Lecture 6 ([slides](https://github.com/cs109/2015/raw/master/Lectures/06-StoryTelling.pdf), [video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=afe70053-b8b7-43d3-9c2f-f482f479baf7)) is on how to tell stories with data. 
+### Lecture 6: Story Telling and Effective Communication
+
+[slides](https://github.com/cs109/2015/raw/master/Lectures/06-StoryTelling.pdf), [video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=afe70053-b8b7-43d3-9c2f-f482f479baf7) is on how to tell stories with data. 
 
 Good insights on how to tell a story with data. Infer, model, use an algorithim and draw conclusions (and check!).  
 
@@ -87,7 +86,9 @@ Tell a story:
 More resources:
 - [The Functional Art](http://www.thefunctionalart.com/)
 
-### Lecture 7 ([slides](https://github.com/cs109/2015/raw/master/Lectures/07-BiasAndRegression.pdf), [video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=afe70053-b8b7-43d3-9c2f-f482f479baf7))
+### Lecture 7: Bias and Regression
+
+[slides](https://github.com/cs109/2015/raw/master/Lectures/07-BiasAndRegression.pdf), [video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=afe70053-b8b7-43d3-9c2f-f482f479baf7)
 
 - think about bias, missing data, etc
 - combine independent, unbiased estimators for a parameter into one:
@@ -106,7 +107,9 @@ More resources:
 
 ## Week 5: Scikit learn & regression
 
-### Lab 4 - Regression in Python ([video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=483c8b93-3700-4ee8-80ed-aad7f3da7ac2), [notebook](https://github.com/khalido/cs109-2015/blob/master/Labs/2015lab4/Lab4-stats.ipynb))
+### Lab 4 - Regression in Python
+
+[video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=483c8b93-3700-4ee8-80ed-aad7f3da7ac2), [notebook](https://github.com/khalido/cs109-2015/blob/master/Labs/2015lab4/Lab4-stats.ipynb)
 
 - [Wikipeda article](https://en.wikipedia.org/wiki/Linear_regression)
 - We have data X, which is related to Y in some way.
@@ -124,7 +127,9 @@ More resources:
     - gradient descent is O(n), so for large high d data it's gradient descent all the way
 - Logistic regression - used where outcome is binary, for example a chance of success/failure. read:[Adit's explanation.](http://adit.io/posts/2016-03-13-Logistic-Regression.html)
 
-### Lecture 8: More Regression ([video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=664f668e-e008-4f44-8600-e09ee6d629b0), [slides](https://github.com/khalido/cs109-2015/blob/master/Lectures/08-RegressionContinued.pdf))
+### Lecture 8: More Regression 
+
+[video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=664f668e-e008-4f44-8600-e09ee6d629b0), [slides](https://github.com/khalido/cs109-2015/blob/master/Lectures/08-RegressionContinued.pdf)
 
 - collinerarity - when some variables are highly correlated with each other - this is bad
 - Logistic Regression
@@ -139,7 +144,9 @@ More resources:
     - Ridge does L2 regularization, doesn't necessarily reduce features but reduces the impace of features on the model by reducing coefficient value
 - Elasticnet does both L1 and L2 regularization
 
-### Lecture 9: Classification ([video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=c322c0d5-9cf9-4deb-b59f-d6741064ba8a), [slides](https://github.com/khalido/cs109-2015/blob/master/Lectures/09-ClassificationPCA.pdf))
+### Lecture 9: Classification 
+
+[video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=c322c0d5-9cf9-4deb-b59f-d6741064ba8a), [slides](https://github.com/khalido/cs109-2015/blob/master/Lectures/09-ClassificationPCA.pdf)
 
 - we take data and assign labels
 - 1 nearest neighbour - simple classification method for low d data
@@ -172,7 +179,9 @@ Now the course finally gets interesting. Before starting this weeks work, think 
 
 There are quite a few companies automating the entire datascience chain, so the key is being able to present your findings well.
 
-### HW 2 Questions 2,3 & 4 [notebook](https://github.com/khalido/cs109-2015/blob/master/homework/HW2.ipynb)
+### HW 2 Questions 2,3 & 4 
+
+[notebook](https://github.com/khalido/cs109-2015/blob/master/homework/HW2.ipynb)
 
 H2 depends wholly on week 5, so good idea to get it done first.
 
@@ -355,12 +364,58 @@ HW3 [q2](https://nbviewer.jupyter.org/github/khalido/cs109-2015/blob/master/home
 - think about how and why to normalize data, e.g data already in a range from 0-1 might not need to be normalized, think about normazlization as hyperparameters to your model.
     - get the mean estimates from your training data and use that to normalize training, validation and testing data. these values need to be stored to normalize future data.
 - know your application domain
-- many problems are to do with imbalanced data, Fixes to get balanced data for training:
+- many problems are to do with imbalanced data. Fixes to get balanced data for training:
     - oversample: take bigger samples of the sparse clasess
     - subsampling: take smaller samples of the more frequently occuring classes 
     - or weight classes so classifier pays more attention to the sparese classes, see [sklearn](http://scikit-learn.org/stable/modules/generated/sklearn.model_selection.StratifiedKFold.html#sklearn.model_selection.StratifiedKFold)
+- Missing data, where some of the features are missing for certain samples: 
+    - delete, but can reduce data too much 
+    - use mean
+    - use regression to estimate missing values
+- [Collobrative filtering](https://en.wikipedia.org/wiki/Collaborative_filtering) is a common technique for recommendations or filling in missing values. Can be user based or item based.
+    - KNN is widely used for collobrative filtering. 
+    - SVD is widely used, famously in the netflix contest. watch this [svd video](https://www.youtube.com/watch?v=YKmkAoIUxkU) for a refresher if needed.
+
+Moving on from Machine Learning...
+
+Map reduce is a way to deal with very large data sets by distributing work over many machines. Developed by Google, and Apache Hadoop is a open source implementation.
+
+- data is in key value pairs and is distributed to however many servers
+- we write a map function which does something to a key value pair.
+- the mapreduce implementation reaggregrates the key value pairs incoming from all the servers (sorted by keys)
+- we write a reduce which does something else
+- simple mapreduce example: 
+    - map takes in sentences, sends them off to diff machines to process, 
+    - those machines send back key:value pairs, say we are just counting words so we get back from machine 1: `"the":1`, `"the":1`, `"a":4` and machine 2 sends back "the":4, "a"10, 
+    - there can be a combine step here, which takes the output from one mapper and combines it, so the two `the` words from machine 1 become one `"the":2`. this reduces network traffic and makes the work upstream easier. the combine output has to be of the same type as the mapper, since combine is just an optional  optimizatizion step not a DO WORK thing.
+    - the mapreduce thingamajig aggregrates all the key:value pairs and sends them to the
+    - reduce function, which counts the words and finally we end up with "the":6 and "a":14
+    - ![](images/mapreduce.png)
+    - Udacity has a [course on mapreduce with hadoop](https://www.udacity.com/course/intro-to-hadoop-and-mapreduce--ud617)
+
 
 ### Lecture 15: MapReduce Combiners and Spark
+
+[video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=10964b32-dcdc-49d2-b766-039b707a5c37), [slides](https://github.com/cs109/2015/raw/master/Lectures/15a-MapReduce_Combiner.pdf)
+
+- refresher on mapreduce: it takes away the headache of dealing with machines, clusters, etc
+  - be careful on how you use reducers, they shouldn't effect the algorithims effectiveness
+  - the reducer should work whether or not the combiner runs
+  - you could have a in-mapper combining, but here we are gettting into complex territory
+- Why did we switch to map reduce from good old write a function and run it computing to the horror that is map reduce?
+  - large large data which looms like a t-rex, scaring our current teeny tiny computers cowering away in fear. luckily the computers gathered in data centers where mapreduce and other such algos can harness them in parallel.
+  - many problems are embarrisingly parallel
+- [Apache Hadoop](http://hadoop.apache.org/) is an open source implementation of map reduce, built way back in 2006. It provides us a way to store data on clusters of commodity machines and process it using mapreduce, without having to worry about the rocketscience of managing the clusters and splitting data and processes across all the machines. 
+- Though these days you probably want to use Hadoop with [Apache Spark](http://spark.apache.org/) running on [Amazon's EMR](https://aws.amazon.com/emr/) or [Google Cloud](https://cloud.google.com/dataproc/).
+- python has tools like [dask](https://ipyparallel.readthedocs.io/en/latest/) and [ipyparallel](https://ipyparallel.readthedocs.io/en/latest/) for parallel computing. for many projects python is enough
+- Functional programming: where your functions take an input, process it and return an output, without messing around with other functions or data stored elsewhere. this makes so much sense that it shouldn't be a big deal, it sounds like a toyota corolla of the computing world, but its a big deal because ppl manage to write functions which fuck around with your programming world enough that after a few rounds of their unfunctional running around no one has a good idea of whats the actual state of things. 
+  - Functional programming is clean! Watch Joel Grus [Learning Data Science Using Functional Python](http://pyvideo.org/pydata-seattle-2015/learning-data-science-using-functional-python.html) or [this one](https://www.youtube.com/watch?v=LkpHQL863mw)
+- Getting back to mapreduce, when you are programming functionally, then it makes it possible to distribute the data and computing across different machines as the functions aren't trying to mess with each other. When a machine dies, its no big deal as we know what data and function we sent it to process, we just resend it to some other machine.
+  - aside: this is why pandas always outputs a new dataframe whenever we do something, trying to emulate this ideal of not fucking up existing things. Spark also does similar stuff.
+- [Apache Spark](http://spark.apache.org/) makes all this easy for us. Runs on top of Hadoop and provides nice interface and methods for all kind of stuff. So nicer, faster, shineir than Hadoop. 
+  - Spark stores data on a Resilient distributed dataset (RDD) - a fault tolerant collection of stuff which can be operated on in parallel.
+  - the basics of using sparl: write a function, some kind of mapreduce job, spark runs it on the RDD and makes a new processed RDD. 
+  - explore spark…. _todo_
 
 ## Week 9: Bayes!
 
@@ -378,8 +433,8 @@ hw5
 
 ## Week 13: Final Project & Wrapup
 
-
 # Additional Resources
+
 Stuff I found useful to understand the class material better.
 
 - [Computational and Inferential Thinking](https://ds8.gitbooks.io/textbook/content/) - the textbook for UC Berkely's [Foundations of Data Science class](http://data8.org/.
