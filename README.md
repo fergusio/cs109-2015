@@ -16,11 +16,11 @@ Note: download the videos using [this script](https://github.com/christopher-bec
 
 ## Week 1: What is Data Science
 
-[Lecture 1](https://github.com/khalido/cs109-2015/blob/master/Lectures/01-Introduction.pdf) introduces data science. All basic stuff.
+[Lecture 1](https://github.com/khalido/cs109-2015/blob/master/Lectures/01-Introduction.pdf) introduces data science. The basic stuff covered in every blog post.
 
 ## Week 2: Intro Data Analysis and Viz
 
-The lecture 2 notebook goes through getting data and putting it into a pandas dataframe.
+The [lecture 2 notebook](https://github.com/khalido/cs109-2015/blob/master/Lectures/02-DataScraping.ipynb) goes through getting data and putting it into a pandas dataframe.
 
 Lab 1 has three very introductory notebooks: [pythonpandas](https://github.com/khalido/cs109-2015/blob/master/Labs/2015lab1/Lab1-pythonpandas.ipynb), followed by [babypython](https://github.com/khalido/cs109-2015/blob/master/Labs/2015lab1/Lab1-babypython.ipynb), and finally [git](https://github.com/khalido/cs109-2015/blob/master/Labs/2015lab1/Lab1-git.ipynb). However, since the course dates back to 2015, some of the python is a bit dated and uses 2.x code. 
 
@@ -43,7 +43,7 @@ I made a couple of notebooks expand on some of the stuff covered:
 
 ## Week 3 : Databases, SQL and more Pandas
 
-[Lab 2](https://github.com/khalido/cs109-2015/blob/master/Labs/2015lab2/Lab2.ipynb) introduces web scraping with [requests](http://docs.python-requests.org/en/master/) and then parsing html with [beautiful soup 4](https://www.crummy.com/software/BeautifulSoup/bs4/doc/.
+[Lab 2](https://github.com/khalido/cs109-2015/blob/master/Labs/2015lab2/Lab2.ipynb) introduces web scraping with [requests](http://docs.python-requests.org/en/master/) and then parsing html with [beautiful soup 4](https://www.crummy.com/software/BeautifulSoup/bs4/doc/).
 
 Lecture 4 ([video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=f8a832cb-56e7-401b-b485-aec3c9928069), [slides](https://github.com/cs109/2015/raw/master/Lectures/04-PandasSQL.pdf)) (covers some more [Pandas and SQL](https://github.com/khalido/cs109-2015/blob/master/Lectures/Lecture4/PandasAndSQL.ipynb).
 
@@ -52,7 +52,7 @@ Lecture 5 ([slides](https://github.com/cs109/2015/raw/master/Lectures/05-Statist
  - [Think Stats](http://greenteapress.com/thinkstats2/index.html) is a good basic book covering stats using Python.
  - [Think Bayes](http://greenteapress.com/wp/think-bayes/) follows on from Think Stats and covers Bayesian stats in Python.
 
-## Week 4: Probablity, Regression and 
+## Week 4: Probablity, regression and some stats
 
 [Lab 3](https://github.com/khalido/cs109-2015/tree/master/Labs/2015lab3) has three notebooks:
 - [Lab3-Probability](https://github.com/khalido/cs109-2015/blob/master/Labs/2015lab3/Lab3-probability.ipynb) covers basic probability. Uses a lot of numpy methods, so its a good idea to brush up on numpy.
@@ -63,9 +63,7 @@ Lecture 5 ([slides](https://github.com/cs109/2015/raw/master/Lectures/05-Statist
     - [PMF](https://en.wikipedia.org/wiki/Probability_mass_function) tells us the probability that a discrete random variable will be ecactly equal to some value
     - [CDF](https://en.wikipedia.org/wiki/Cumulative_distribution_function) function tells us the probability that a random discrete or continous variable X will take a value less than or equal to X. [Video](https://youtu.be/bGS19PxlGC4?list=PLF8E9E4FDAAA8018A)
 
-### Lecture 6: Story Telling and Effective Communication
-
-[slides](https://github.com/cs109/2015/raw/master/Lectures/06-StoryTelling.pdf), [video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=afe70053-b8b7-43d3-9c2f-f482f479baf7) is on how to tell stories with data. 
+### Lecture 6: Story Telling and Effective Communication ([slides](https://github.com/cs109/2015/raw/master/Lectures/06-StoryTelling.pdf), [video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=afe70053-b8b7-43d3-9c2f-f482f479baf7)) 
 
 Good insights on how to tell a story with data. Infer, model, use an algorithim and draw conclusions (and check!).  
 
@@ -86,9 +84,7 @@ Tell a story:
 More resources:
 - [The Functional Art](http://www.thefunctionalart.com/)
 
-### Lecture 7: Bias and Regression
-
-[slides](https://github.com/cs109/2015/raw/master/Lectures/07-BiasAndRegression.pdf), [video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=afe70053-b8b7-43d3-9c2f-f482f479baf7)
+### Lecture 7: Bias and Regression ([slides](https://github.com/cs109/2015/raw/master/Lectures/07-BiasAndRegression.pdf), [video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=afe70053-b8b7-43d3-9c2f-f482f479baf7))
 
 - think about bias, missing data, etc
 - combine independent, unbiased estimators for a parameter into one:
@@ -107,9 +103,7 @@ More resources:
 
 ## Week 5: Scikit learn & regression
 
-### Lab 4 - Regression in Python
-
-[video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=483c8b93-3700-4ee8-80ed-aad7f3da7ac2), [notebook](https://github.com/khalido/cs109-2015/blob/master/Labs/2015lab4/Lab4-stats.ipynb)
+### Lab 4 - Regression in Python ([video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=483c8b93-3700-4ee8-80ed-aad7f3da7ac2), [notebook](https://github.com/khalido/cs109-2015/blob/master/Labs/2015lab4/Lab4-stats.ipynb))
 
 - [Wikipeda article](https://en.wikipedia.org/wiki/Linear_regression)
 - We have data X, which is related to Y in some way.
@@ -127,9 +121,7 @@ More resources:
     - gradient descent is O(n), so for large high d data it's gradient descent all the way
 - Logistic regression - used where outcome is binary, for example a chance of success/failure. read:[Adit's explanation.](http://adit.io/posts/2016-03-13-Logistic-Regression.html)
 
-### Lecture 8: More Regression 
-
-[video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=664f668e-e008-4f44-8600-e09ee6d629b0), [slides](https://github.com/khalido/cs109-2015/blob/master/Lectures/08-RegressionContinued.pdf)
+### Lecture 8: More Regression ([video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=664f668e-e008-4f44-8600-e09ee6d629b0), [slides](https://github.com/khalido/cs109-2015/blob/master/Lectures/08-RegressionContinued.pdf))
 
 - collinerarity - when some variables are highly correlated with each other - this is bad
 - Logistic Regression
@@ -144,9 +136,7 @@ More resources:
     - Ridge does L2 regularization, doesn't necessarily reduce features but reduces the impace of features on the model by reducing coefficient value
 - Elasticnet does both L1 and L2 regularization
 
-### Lecture 9: Classification 
-
-[video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=c322c0d5-9cf9-4deb-b59f-d6741064ba8a), [slides](https://github.com/khalido/cs109-2015/blob/master/Lectures/09-ClassificationPCA.pdf)
+### Lecture 9: Classification ([video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=c322c0d5-9cf9-4deb-b59f-d6741064ba8a), [slides](https://github.com/khalido/cs109-2015/blob/master/Lectures/09-ClassificationPCA.pdf))
 
 - we take data and assign labels
 - 1 nearest neighbour - simple classification method for low d data
@@ -168,10 +158,10 @@ More resources:
 - [good pca and svd explanation](https://medium.com/machine-learning-for-humans/unsupervised-learning-f45587588294)
 - Watch [Statistics for Hackers](https://www.youtube.com/watch?v=Iq9DzN6mvYA)
 
-### HW2 Q1 
+### HW2 Q1 ([notebook](https://github.com/khalido/cs109-2015/blob/master/homework/HW2.ipynb))
 
-- [notebook](https://github.com/khalido/cs109-2015/blob/master/homework/HW2.ipynb)
 - Uses svd and pca to analyze gene data
+- a pandas excercise in downloading csv files into a data frame, usijng pd.datetime and visualising samples vs time
 
 ## Week 6: SVM, trees and forests
 
@@ -179,11 +169,20 @@ Now the course finally gets interesting. Before starting this weeks work, think 
 
 There are quite a few companies automating the entire datascience chain, so the key is being able to present your findings well.
 
-### HW 2 Questions 2,3 & 4 
+### HW 2 Questions 2,3 & 4 ([notebook](https://github.com/khalido/cs109-2015/blob/master/homework/HW2.ipynb))
 
-[notebook](https://github.com/khalido/cs109-2015/blob/master/homework/HW2.ipynb)
+H2 depends wholly on week 5, so good idea to get it done first. Used seaborn for all the viz questions makes some of them trivial.
 
-H2 depends wholly on week 5, so good idea to get it done first.
+- q2 looks at polling data and bias
+- q3 is more of the same but with seaborn
+- q4 nothing much to see here besides using list comprehensions to make a list of all the .csv files _(I'm trying to use python to do all the work instead of my stone age past life of copying and pasting links)_
+
+```python
+url_str = "http://elections.huffingtonpost.com/pollster/api/charts/?topic=2014-senate"
+election_urls = [election['url'] + '.csv' for election in requests.get(url_str).json()]
+```
+
+
 
 ### Lab 5: Machine Learning
 
@@ -231,7 +230,7 @@ print(pca.explained_variance_ratio_) # how much of variance is explained
 - SVM is a discrimant classier which finds the widest possible margin b/w classes, including some points touching the boundary which are called the support vectors. (since they support or establish the margins.)
 
 
-### Lecture 10: SVM, Evaluation
+### Lecture 10: SVM, Evaluation ([video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=f21fcc8f-93a8-49f6-9ff8-0f339b0728bd), [slides](https://github.com/cs109/2015/raw/master/Lectures/10-SVMAndEvaluation.pdf))
 
 - KNN - training is fast, prediction slow since we need to check all the data points to find the nearest neighbours
 - but if we know the decision boundary (the seperating hyperplane) we don't need all the data points
@@ -298,7 +297,7 @@ Start the [project](http://cs109.github.io/2015/pages/projects.html)
 
 > Towards the end of the course you will work on a month-long data science project. The goal of the project is to go through the complete data science process to answer questions you have about some topic of your own choosing. You will acquire the data, design your visualizations, run statistical analysis, and communicate the results. You will work closely with other classmates in a 3-4 person project team.
 
-### Lab 6: 
+### Lab 6: Machine Learning 2
 
 **Classification, Probabilities, ROC curves, and Cost** ([video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=83dfe4c9-fa1b-429c-a84c-839195fbede8),[notebook](https://github.com/cs109/2015lab6/blob/master/lab6-classification-redux.ipynb))
 
@@ -313,9 +312,8 @@ Start the [project](http://cs109.github.io/2015/pages/projects.html)
 - use [ROC](https://en.wikipedia.org/wiki/Receiver_operating_characteristic) curves - often accuracy is the the relevant, the true +ve and false -ve rate is more important. Since False negatives can be costly, you often want to change the threshold probability from the default 0.5. So write your own prediction function as the sklearn one uses 0.5, or with bayes classifiers adjust the prior probability. 
 - sklearn has a [roc function](http://scikit-learn.org/stable/auto_examples/model_selection/plot_roc.html#sphx-glr-auto-examples-model-selection-plot-roc-py), [tutorial](http://benalexkeen.com/scoring-classifier-models-using-scikit-learn/)
 
-### Lecture 12: Ensemble Methods 
+### Lecture 12: Ensemble Methods (([video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=4831ebf0-7832-42c5-9339-5b5e08dd3e92), [slides](https://github.com/cs109/2015/blob/master/Lectures/12-Ensemble%20Learning%20and%20Random%20Forests.pdf)))
 
-- ([video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=4831ebf0-7832-42c5-9339-5b5e08dd3e92), [slides](https://github.com/cs109/2015/blob/master/Lectures/12-Ensemble%20Learning%20and%20Random%20Forests.pdf))
 - philisophical point: who do ensenble methods work so well? in real life wisdom of the crowds is overrated, but it does a lot better in computerland. Some averaging methods pick up useful stuff in the data, while others cancel out each others errors.
 - Decision trees are easy but have poor predictive accuracy, tend to ovefit
 - Ensemble learning combines many learners using methods like weighted avg, boosting, etc. See [sklearn's ensemble page](http://scikit-learn.org/stable/modules/ensemble.html)
@@ -328,9 +326,8 @@ Start the [project](http://cs109.github.io/2015/pages/projects.html)
 
 Note: read [this series on machine learning](https://medium.com/machine-learning-for-humans/why-machine-learning-matters-6164faf1df12)
 
-### Lecture 13: Best Practices 
+### Lecture 13: Best Practices ([video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=b33eec92-d049-4353-a904-5054eb718aff), [slides](https://github.com/cs109/2015/blob/master/Lectures/13-BestPractices_Recommendations.pdf))
 
-- ([video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=b33eec92-d049-4353-a904-5054eb718aff), [slides](https://github.com/cs109/2015/blob/master/Lectures/13-BestPractices_Recommendations.pdf))
 - story telling is important for data scientists - explain whats going on, even in your own notebooks. good presentation is very important.
 - Diff b/w bagging and random forest: rf has bagging idea + random feature subsets
 - didn't really find this video that useful, for example:
@@ -342,9 +339,7 @@ Note: read [this series on machine learning](https://medium.com/machine-learning
 
 HW3 [q2](https://nbviewer.jupyter.org/github/khalido/cs109-2015/blob/master/homework/HW3.ipynb#Problem-2) uses the iris data set & [q3](https://nbviewer.jupyter.org/github/khalido/cs109-2015/blob/master/homework/HW3.ipynb#Problem-3:) uses sklearn's digits dataset and gridsearchCV to find best parameters for a KNN classifier for two simple datasets.
 
-### Lab 7: Decision Trees, Random Forests, Ensemble Methods
-
-[video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=0c645a5c-d262-4bb5-a137-3a78db60f3e7), [notebook](https://github.com/khalido/cs109-2015/blob/master/Labs/2015lab7/Lab7-Botany%20and%20Ensemble%20Methods.ipynb)
+### Lab 7: Decision Trees, Random Forests, Ensemble Methods ([video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=0c645a5c-d262-4bb5-a137-3a78db60f3e7), [notebook](https://github.com/khalido/cs109-2015/blob/master/Labs/2015lab7/Lab7-Botany%20and%20Ensemble%20Methods.ipynb))
 
 - [decision trees](http://scikit-learn.org/stable/modules/tree.html#tree), but they use their own function on top of sklearn so its a bit annoying
 - [random forests](http://scikit-learn.org/stable/modules/ensemble.html#forest):
@@ -355,9 +350,7 @@ HW3 [q2](https://nbviewer.jupyter.org/github/khalido/cs109-2015/blob/master/home
 - [AdaBoost Classifier](http://scikit-learn.org/stable/modules/ensemble.html#adaboost) uses weights on the training data.
 - [Gradient Boost Classifier](http://scikit-learn.org/stable/modules/ensemble.html#gradient-tree-boosting) is similar to AdaBoost but uses tree as its base classifier, can do regression or classification.
 
-### Lecture 14: Best Practices, Recommendations and MapReduce.
-
-[video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=afee45b9-dcf5-4f29-bc60-871aa78f1cf8), [slides](https://github.com/cs109/2015/raw/master/Lectures/14-Recommendations_MapReduce.pdf)
+### Lecture 14: Best Practices, Recommendations and MapReduce ([video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=afee45b9-dcf5-4f29-bc60-871aa78f1cf8), [slides](https://github.com/cs109/2015/raw/master/Lectures/14-Recommendations_MapReduce.pdf))
 
 - should have started final project by now, if not, start now!
 - **Nesting:** use 5 fold cross validation, take each fold and further apply 5 fold cv to find the right hyperparameters, then use those params in the original fold to train the classifier.
@@ -394,9 +387,7 @@ Map reduce is a way to deal with very large data sets by distributing work over 
     - Udacity has a [course on mapreduce with hadoop](https://www.udacity.com/course/intro-to-hadoop-and-mapreduce--ud617)
 
 
-### Lecture 15: MapReduce Combiners and Spark
-
-[video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=10964b32-dcdc-49d2-b766-039b707a5c37), [slides](https://github.com/cs109/2015/raw/master/Lectures/15a-MapReduce_Combiner.pdf)
+### Lecture 15: MapReduce Combiners and Spark ([video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=10964b32-dcdc-49d2-b766-039b707a5c37), [slides](https://github.com/cs109/2015/raw/master/Lectures/15a-MapReduce_Combiner.pdf))
 
 - refresher on mapreduce: it takes away the headache of dealing with machines, clusters, etc
   - be careful on how you use reducers, they shouldn't effect the algorithims effectiveness
@@ -415,13 +406,54 @@ Map reduce is a way to deal with very large data sets by distributing work over 
 - [Apache Spark](http://spark.apache.org/) makes all this easy for us. Runs on top of Hadoop and provides nice interface and methods for all kind of stuff. So nicer, faster, shineir than Hadoop. 
   - Spark stores data on a Resilient distributed dataset (RDD) - a fault tolerant collection of stuff which can be operated on in parallel.
   - the basics of using sparl: write a function, some kind of mapreduce job, spark runs it on the RDD and makes a new processed RDD. 
+  - a lot of the pandas style commands work on spark 
+  - spark is lazy - it makes a graph of the stuff we want to do and then runs it from start to end every time we execute. so caching is important so we don't keep computing same stuff over and over again
   - explore spark…. _todo_
 
 ## Week 9: Bayes!
 
-### Lab 8: Vagrant and VirtualBox, AWS, and Spark
+### Lab 8: Vagrant and VirtualBox, AWS, and Spark ([video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=6f1deb9e-051b-4019-99ec-19aee14be9d9), [notebook]())
 
-### Lecture 16: Bayes Theorem and Bayesian Methods
+- Moving on from sklearn...
+- ​
+
+### Lecture 16: Bayes Theorem and Bayesian Methods ([video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=233f6c34-306f-481b-8ea5-be33076eb6a8), [slides](https://github.com/cs109/2015/raw/master/Lectures/16-BayesianMethods.pdf))
+
+- book recommendations from the lecture: _(the one I liked best in bold)_
+
+  - easy reading: [How Bayes’ Rule Cracked the Enigma Code](https://www.amazon.com/Theory-That-Would-Not-Die-ebook/dp/B0050QB3EQ/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=) also see her [talk at google](https://www.youtube.com/watch?v=8oD6eBkjF9o).
+  - simple stuff, in python: [Think Bayes](http://greenteapress.com/wp/think-bayes/), though maybe too basic 
+  - **[Probabilistic Programming & Bayesian Methods for Hackers](http://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/) - text and python code is in [jupyter notebooks](https://github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers) which u can clone to your own pc and go through.**
+  - Proper textbooks: [Bayesian Data Analysis](http://www.stat.columbia.edu/~gelman/book/) and [Statistical Rethinking](http://xcelab.net/rm/statistical-rethinking/) - this comes with [python examples](https://github.com/aloctavodia/Statistical-Rethinking-with-Python-and-PyMC3).
+
+- Bayes rule: P(A|B) = P(B|A)P(A) / P(B)
+
+- bayes rules tells us how to update our beliefs (the prior) as we get new data, which gives us a new posterior (which is just a fancy word for our new, updated belief). A more [wordy description](http://www.nytimes.com/2011/08/07/books/review/the-theory-that-would-not-die-by-sharon-bertsch-mcgrayne-book-review.html): 
+
+  > The theorem itself can be stated simply. Beginning with a provisional hypothesis about the world (there are, of course, no other kinds), we assign to it an initial probability called the prior probability or simply the prior. After actively collecting or happening upon some potentially relevant evidence, we use Bayes’s theorem to recalculate the probability of the hypothesis in light of the new evidence. This revised probability is called the posterior probability or simply the posterior. 
+
+  - bayes is controversial becuase traditional stats doesn't like giving numbers to unknown thinks, for example bayes essentially makes up the prior. the prior is often our subject belief about something. 
+    - however, even when starting out with different priors, given that they aren't ridiculously dogmatic, with a large sample size the different priors will converge
+  - discriminative model: focus on predicting y given x, generative model: we simulate the entire model, i.e we can generate x and y
+  - naive bayes: assumes probablities are conditionally independent of each other, greatly simplifies the calculations. sometimes unrealistic but works well for many scenarios. [sklearn has bayes, of course](http://scikit-learn.org/stable/modules/naive_bayes.html).
+  -  Conjugate prior says that if u start with a family of distributions, like beta, you stay in the same distribution. simplifies computations
+  - one way to think about bayesian 
+
+More Reading:
+
+- [Count Baye's intro to bayesian statistics](https://www.countbayesie.com/blog/2016/5/1/a-guide-to-bayesian-statistics)
+
+### Lecture 17: Bayesian Methods Continued ([video](https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=e63c650e-4cf6-4bee-b57e-f16e927ba25a), [slides](https://github.com/cs109/2015/raw/master/Lectures/17BayesianMethodsContinued.pdf))
+
+- you can estimate your prior from the data, though some bayesians would say you're tainting your priors and the data by doing that, but this is an accepted way to get an acceptable prior. 
+- the lecture works through examples from a blog, which has collected its bayes posts into this book: [Introduction to Empirical Bayes: Examples from Baseball Statistics](http://varianceexplained.org/r/empirical-bayes-book/). the explanations in the book look great. 
+
+Note: Bayes is simple to do yet hard to understand. So read a number of guides/blogs/posts/[youtubes](http://pyvideo.org/search.html?q=bayes) till it makes sense. Some talks to see:
+
+- [Eric J Ma Bayesian Statistical Analysis with Python PyCon 2017](https://www.youtube.com/watch?v=p1IB4zWq9C8) - 30 min talk, uses PyMC3
+- [Christopher Fonnesbeck Probabilistic Programming with PyMC3 PyCon 2017](https://www.youtube.com/watch?v=5TyvJ6jXHYE) - 30min, more PyMC3
+
+
 
 ## Week 10: Text
 
